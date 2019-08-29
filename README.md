@@ -1,2 +1,2 @@
-# site in progress. 
-# link to current version is added.
+ 
+# Link to current version is added.
