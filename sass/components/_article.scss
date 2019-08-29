@@ -1,0 +1,113 @@
+
+.article{
+    position: relative;
+    &-main{
+        background: transparent;
+        display: grid;
+        padding: 3rem 0;
+        margin: 1rem 0;
+        width: 100%;
+        &__h2{
+            grid-area: head;
+        }
+        &__text{
+            color: $primary;
+            font-size: 1.6rem;
+            grid-area: text;
+            padding: 1.5rem;
+        }
+        &__img{
+            overflow: hidden;
+            &--img1{
+                grid-area: img1;
+            }
+            &--img2{
+                grid-area: img2;
+            }
+            &--img3{
+                grid-area: img3;
+            }
+        }
+    }
+
+    &-img{
+        width: 100%;
+        height: 100%;
+        transition: .5s linear transform;
+        &:hover{
+            transform: scale(1.1) rotate(0.001deg);
+        }
+    }
+    
+    &-number{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        &--leftTop{
+            top: 0;
+            right: 100%;
+            border-top: $aside-line solid $text-primary;
+        }
+        &--leftBottom{
+            top: 0;
+            right: 100%;
+            border-bottom: $aside-line solid $text-primary;   
+        }
+        &--rightTop{
+            top: 0;
+            left: 100%;
+            border-top: $aside-line solid $text-primary;
+        }
+        &--rightBottom{
+            top: 0;
+            left: 100%;
+            border-bottom: $aside-line solid $text-primary;
+        }
+    
+        &__text{
+            display: block;
+            position: absolute;
+            color: #fff;
+            background: $text-primary;
+            min-width: 3rem;
+            font-size: 3rem;
+            padding: .8rem 0;
+            &--leftTop{
+                top: 0;
+                right: 0;
+            }
+            &--leftBottom{
+                bottom: 0;
+                right: 0;
+            }
+            &--rightTop{
+                top: 0;
+                left: 0;
+            }
+            &--rightBottom{
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+
+    &-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -5;
+        &__text{
+            margin-top: -14rem;
+            font-size: 40rem;
+            color: #fff;
+            text-shadow: 0px 0px 10px #ccc;
+            /*font-weight: bold;*/
+            overflow: hidden;	  
+            position: relative;
+        }       
+    }
+
+}

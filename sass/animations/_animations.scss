@@ -1,0 +1,38 @@
+
+@keyframes opacity{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/* FOR LOGO TO SHOW*/
+
+@keyframes logo-img {
+    0% { transform: translate(120%,-50%); }
+    100% { transform: translate(0%,-50%); }
+}
+
+@keyframes scale-from-zero {  
+    0% { transform: scale(0); }   
+    100% { transform: scale(1); } 
+  }
+  
+  @keyframes appear-from-left{
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+  }
+
+
+  /* FOR ARTICLE TEXT */
+
+  @keyframes slow-move-left {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  @keyframes slow-move-right {
+    0% { transform: translateX(-50%); }
+    50% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }

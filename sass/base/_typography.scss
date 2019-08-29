@@ -1,0 +1,42 @@
+
+
+html{
+    font-size: 10px;
+}
+body{   
+    font-family: Titillium;
+    font-weight: $normal;
+  }
+
+.h1{
+    font-size: 5rem;
+    font-weight: $semibold;
+    padding: 5rem;
+    color: $text-dark;
+    background: -webkit-linear-gradient( 135deg, $secondary-gradient  0%, $secondary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &__span{
+        color: #fff;
+        -webkit-text-fill-color:#fff;
+        font-size: 2rem;
+        font-weight: $thin;
+        display: block;
+    }
+}
+
+.h2{
+    font-size: 2rem;
+    font-weight: $bold;
+    display: block;
+    &__span{
+        font-size: 2rem;
+        font-weight: $normal;
+        display: block;
+        border-radius: 50%;
+    }
+}
+
+.h3{
+    font-size: 1.8rem;
+}

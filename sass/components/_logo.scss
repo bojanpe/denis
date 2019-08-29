@@ -1,0 +1,59 @@
+
+.logo{
+    background: $primary;
+    display: flex;
+    &__image{
+        background: url('../img/d.png') no-repeat center center/contain;
+        width: 6rem;
+        height: $header-height;
+        position: relative;
+        margin-left: 1rem;
+        top: 50%;
+        transform: translate(0%,-50%);
+        animation: logo-img 1s 0.4s forwards, opacity 1s 0.5s forwards;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    &__text{
+        z-index: 2;
+        align-self: center;
+        border-left: 2px solid #fff;
+        background: $primary;
+        height: 80%;
+        animation: scale-from-zero 1s forwards;
+        overflow: hidden;
+    }
+}
+
+.logo-text{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    font-weight: $normal;
+    overflow: hidden;
+    padding-top: 5px;
+    line-height: 1.7rem;
+    
+    &__name{
+        position: relative;
+        font-weight: $normal;
+        font-size: 2.3rem;
+        letter-spacing: 4.6px;
+        opacity: 0;
+        animation: appear-from-left 1.5s 0.6s forwards, opacity 1s 0.8s forwards;
+    }
+    &__description{
+        position: relative;
+        font-size: 1rem;
+        letter-spacing: 1.2px;
+        opacity: 0;
+        animation: appear-from-left 1.5s 0.8s forwards, opacity 1s 1s forwards;
+        padding-left: 1px;
+    }
+}

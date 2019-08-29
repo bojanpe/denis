@@ -1,0 +1,39 @@
+
+
+@import 'font';
+@import 'base/reset';
+@import 'utilities/variables';
+
+
+@import 'base/typography';
+
+@import 'components/logo';
+@import 'components/article';
+@import 'components/social';
+@import 'components/presentation';
+@import 'components/about';
+
+
+@import 'layout/header-nav';
+@import 'layout/banner';
+@import 'layout/grid';
+@import 'layout/footer';
+
+@import 'utilities/helpers';
+
+@import 'animations/animations';
+
+
+
+
+html{
+    background: #fff;
+}
+body{
+    overflow-x: hidden;
+}
+main{
+    max-width: 75%;
+    padding: 3rem;
+    margin: 0 auto;
+}

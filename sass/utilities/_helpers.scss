@@ -1,0 +1,46 @@
+
+/* utilitu helper classes */
+
+.u-uppercase{
+    text-transform: uppercase;
+}
+
+.u-pointer{
+    cursor: pointer;
+}
+
+.u-object-fit{
+    object-fit: cover;
+}
+
+.u-center-align{
+    text-align: center;
+}
+
+
+
+
+
+/* set current page to active */
+.u-current-page{
+    color: $secondary;
+}
+
+
+
+.u-hr{
+    margin: 8rem 0;
+}
+
+
+
+
+
+
+/* animation helpers */
+.u-animation-start-to-left{
+    animation: slow-move-left linear 70s infinite;
+}
+.u-animation-start-to-right{
+    animation: slow-move-right linear 70s infinite;
+}

@@ -1,0 +1,29 @@
+
+.presentation{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2.5rem;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        transition: box-shadow .5s;
+        &:hover{
+            box-shadow: 0 5px 15px #bbb;  
+          }
+    }
+    &__img{
+        object-fit: cover;
+        width: 100%;
+        height: 20rem;
+    }
+    &__text-div{
+       padding: 1rem;
+    }
+    &__text{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    @media(max-width: $breakpoint){
+        grid-template-columns: 1fr;
+    }
+}

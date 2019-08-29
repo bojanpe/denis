@@ -1,0 +1,38 @@
+.footer{
+    height: $header-height;
+    background: $primary;
+    margin-top: $social-height;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content{
+    width: $content-width;
+    margin: 0 auto;
+    color: $text-light;
+    background: $bg-dark;
+    font-weight: $thin;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    &__site-maker,
+    &__copyright,
+    &__year{
+     display: inline-block;
+     padding: 0 1rem;
+     margin: 1rem 0;
+    }
+    &__site-maker{
+        font-size: 1.2rem;
+    }
+    &__copyright{
+        border-left: 1px solid $text-light;
+    }
+    &__year{
+        font-size: 1.2rem;
+        border-left: 1px solid $text-light;
+        border-right: 1px solid $text-light;
+    }
+
+}

@@ -1,0 +1,22 @@
+
+.about{
+    position: relative;
+    &__text-div{
+        width: 60%;
+        @media (max-width: $breakpoint){
+            width: 100%;
+            padding-bottom: 2rem;
+            margin-bottom: $social-height;
+        }
+    }
+    &__text-div{
+        font-size: 1.5rem;
+    }
+
+    &__image{
+        width: $social-height;
+        height: $social-height;
+        padding: 2rem;
+        display: none;
+    }
+}
